@@ -36,15 +36,10 @@ function oldScrabbleScorer(word) {
 function initialPrompt() {
    console.log("Let's play some scrabble! Enter a word:");
    let userInput = input.question();
-   while (!/^[a-zA-Z\s]*$/.test(userInput)) {
-      console.log("Invalid input. Please enter a word:");
-      userInput = input.question();
-   }
+  
+   
    return userInput;
 };
-//let userWord = initialPrompt();
-//let score = oldScrabbleScorer(userWord);
-//console.log(`The score for ${userWord} is:\n${score}`);
 
 let simpleScorer = function(word) {
    word = word.toUpperCase();
